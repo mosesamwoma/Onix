@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Search Button</title>
+    <style>
+        /* Style the form container */
+        .search-container {
+            position: fixed;
+            top: 20px; /* Distance from the bottom */
+            right: 20px; /* Distance from the left */
+            display: flex;
+            gap: 5px; /* Space between input and button */
+        }
+
+        /* Style the search input */
+        .search-container input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        /* Style the search button */
+        .search-container button {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff; /* Blue background */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Change button color on hover */
+        .search-container button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Search Form -->
+    <form action="search_results.html" method="GET" class="search-container">
+        <input type="text" name="query" placeholder="Search..." required>
+        <button type="submit">Search</button>
+    </form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Store</title>
+    <style>
+        /* Basic styling for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        h2 {
+          text-align: center;
+          color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Available Phones in Store</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                
+                <td><a href="iphone.html">iphone</a></td>
+                <td>iPhone 14</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td><a href="Samsung.html">samsung</a></td>
+                <td>Galaxy S23</td>
+                <td>Out of Stock</td>s
+            </tr>
+            <tr>
+                <td><a href="redmi.html">redmi</a></td>
+                <td>Pixel 8</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                
+                <td><a href="realme.html">realme</a></td>
+                <td>redmi 13c</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td><a href="Motorola.html">motorola</a></td>
+                <td>note50</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td><a href="google pixel.html">google pixel</a></td>
+                <td>google pixel</td>
+                <td>In Stock</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+        }
+        .navigation a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .navigation a.previous {
+            background-color: #4CAF50;
+        }
+        .navigation a.next {
+            background-color: #008CBA;
+        }
+        .navigation a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    </div>
+    <div class="navigation">
+        <a href="Home page.html" class="previous">Previous</a>
+        <a href="About Us.html" class="next">Next</a>
+    </div>
+</body>
+</html>
+

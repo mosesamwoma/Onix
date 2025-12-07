@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REALME for Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .price {
+            color: green;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SAMSUNG for Sale</h1>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://www.phoneplacekenya.com/wp-content/uploads/2024/09/Realme-Note-50-400x400.jpg" alt="REALME NOTE 50">
+            <h2>REALME NOTE 50</h2>
+            <p>128GB Storage</p>
+            <div class="price">ksh.150000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+        
+        <div class="product">
+            <img src="https://www.phoneplacekenya.com/wp-content/uploads/2024/02/Realme-C67-4G-Dark-Purple-400x400.jpg" alt="REALME C67">
+            <h2>REALME C67</h2>
+            <p>256GB Storage</p>
+            <div class="price">120000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://www.phoneplacekenya.com/wp-content/uploads/2023/03/Realme-C55-400x400.jpg" alt="REALME C55">
+            <h2>REALME C55</h2>
+            <p>128GB Storage</p>
+            <div class="price">kes100000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://www.phoneplacekenya.com/wp-content/uploads/2023/07/Realme-C51-400x400.jpg" alt="REALME C51">
+            <h2>REALME C51</h2>
+            <p>64GB Storage</p>
+            <div class="price">kes 90000
+            </div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://www.phoneplacekenya.com/wp-content/uploads/2023/07/Realme-C53-400x400.jpg" alt="REALME C53">
+            <h2>REALME C53</h2>
+            <p>128GB Storage</p>
+            <div class="price">200000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://www.phoneplacekenya.com/wp-content/uploads/2022/09/Realme-10-a-400x400.jpg" alt="REALME 10">
+            <h2>REALME 10</h2>
+            <p>256GB Storage</p>
+            <div class="price">kes100000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <!-- Add more products as needed -->
+        
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Search Button</title>
+    <style>
+        /* Style the form container */
+        .search-container {
+            position: fixed;
+            top: 20px; /* Distance from the bottom */
+            right: 20px; /* Distance from the left */
+            display: flex;
+            gap: 5px; /* Space between input and button */
+        }
+
+        /* Style the search input */
+        .search-container input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        /* Style the search button */
+        .search-container button {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff; /* Blue background */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Change button color on hover */
+        .search-container button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Search Form -->
+    <form action="search_results.html" method="GET" class="search-container">
+        <input type="text" name="query" placeholder="Search..." required>
+        <button type="submit">Search</button>
+    </form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+        }
+        .navigation a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .navigation a.previous {
+            background-color: #4CAF50;
+        }
+        .navigation a.next {
+            background-color: #008CBA;
+        }
+        .navigation a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    </div>
+    <div class="navigation">
+        <a href="services.html" class="previous">Previous</a>
+        <a href="next_page.html" class="next">Next</a>
+    </div>
+</body>
+</html>
+

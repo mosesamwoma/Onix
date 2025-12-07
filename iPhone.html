@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered List of iPhones</title>
+</head>
+<body>
+    <h1>IN STOCK</h1>
+    <ol>
+        <li>iPhone 13 Pro Max</li>
+        <li>iPhone 13 Pro</li>
+        <li>iPhone 13</li>
+        <li>iPhone 13 Mini</li>
+        <li>iPhone 12 Pro Max</li>
+        <li>iPhone 12 Pro</li>
+        <li>iPhone 12</li>
+        <li>iPhone 12 Mini</li>
+    </ol>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unordered List of iPhones</title>
+</head>
+<body>
+    <h1>OUT OF STOCK</h1>
+    <ul>
+        <li>iPhone 13 Pro Max</li>
+        <li>iPhone 13 Pro</li>
+        <li>iPhone 13</li>
+        <li>iPhone 13 Mini</li>
+        <li>iPhone 12 Pro Max</li>
+        <li>iPhone 12 Pro</li>
+        <li>iPhone 12</li>
+        <li>iPhone 12 Mini</li>
+    </ul>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+        }
+        .navigation a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .navigation a.previous {
+            background-color: #4CAF50;
+        }
+        .navigation a.next {
+            background-color: #008CBA;
+        }
+        .navigation a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    </div>
+    <div class="navigation">
+        <a href="services.html" class="previous">Previous</a>
+        <a href="next_page.html" class="next">Next</a>
+    </div>
+</body>
+</html>
