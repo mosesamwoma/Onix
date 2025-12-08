@@ -1,25 +1,32 @@
-# 🌐 My First Website
+# My First Website
 
-Welcome to my first website project!  
-This is a beginner-friendly project created to practice the basics of **HTML, CSS, and JavaScript** while building a simple, responsive web page.
+My first website project created during my first year, first semester. A collection of web pages built while learning HTML, CSS, and JavaScript fundamentals.
 
----
+## Prerequisites
 
-## 📌 About the Project
+- A web browser (Chrome, Firefox, Safari, etc.)
+- Git
+- A text editor or IDE (VS Code, Sublime Text, etc.)
 
-This website demonstrates:
+## Installation
 
-- Clean layout using HTML
-- Styling and responsiveness with CSS
-- Basic interactivity using JavaScript
+Clone the repository:
 
-It is designed to be lightweight, easy to understand, and perfect for learning the fundamentals of web development.
+```bash
+git clone https://github.com/mosesamwoma/my-first-website.git
+cd my-first-website
+```
 
----
+## Viewing the Website
 
-## 🛠️ Technologies Used
+Simply open the `index.html` file in your web browser to view the website.
 
-- HTML5
-- CSS3
+## Notes
 
----
+- Code includes comments for learning purposes
+- This project documents my journey learning web development
+- Built with HTML, CSS, and JavaScript
+
+## License
+
+This is a private learning project.
