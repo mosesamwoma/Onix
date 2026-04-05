@@ -3,87 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone FAQs</title>
-</head>
-<body>
-    <h1>Frequently Asked Questions</h1>
-
-    <h2>1. Product Details and Condition</h2>
-    <p>Our phone is in [condition description]. It comes with [list of accessories].</p>
-
-    <h2>2. Pricing and Payment</h2>
-    <p>The price for our phone is $XXX. We accept cash and bank transfers.</p>
-
-    <h2>3. Shipping and Delivery</h2>
-    <p>We offer shipping within [geographical area]. Shipping costs are [mention cost].</p>
-
-    <h2>4. Returns and Refunds</h2>
-    <p>Returns are accepted within [timeframe] if the phone remains undamaged. Refunds will be processed promptly.</p>
-
-    <h2>5. Compatibility and Network</h2>
-    <p>The phone is [unlocked/locked to carrier]. It works with [list of compatible carriers/networks].</p>
-
-    <h2>6. Privacy and Data</h2>
-    <p>Before selling, we wipe all data from the phone. Buyers can set it up with their own accounts.</p>
-
-    <h2>7. Contact Us</h2>
-    <p>If you have any questions, feel free to reach out:</p>
-    <p>Email: <a href="mailto:your@">your@email.com</a></p>
-    <p>Phone +254715755649</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
+    <title>FAQs - Phone Store</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            padding-bottom: 100px;
         }
-        .content {
-            flex: 1;
-            padding: 20px;
+
+        h1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 2.5rem;
+            margin: 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            padding: 20px 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .faq-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .faq-item h2 {
+            color: #667eea;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .contact-box h2 {
+            color: white;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            display: inline-block;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            color: white;
+            margin: 10px 0;
+        }
+
+        .contact-box a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation Bar */
         .navigation {
-            display: flex;
-            justify-content: space-between;
             position: fixed;
-            bottom: 0;
-            width: 100%;
-            padding: 10px 20px;
-            background-color: #f1f1f1;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            background: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
         }
+
         .navigation a {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
             text-decoration: none;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 10px 25px;
+            border-radius: 50px;
+            transition: transform 0.3s;
         }
+
         .navigation a.previous {
-            background-color: #4CAF50;
+            background-color: #28a745;
         }
+
         .navigation a.next {
-            background-color: #008CBA;
+            background-color: #667eea;
         }
+
         .navigation a:hover {
-            opacity: 0.8;
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+                padding: 15px;
+            }
+            
+            .faq-item {
+                padding: 15px 20px;
+            }
+            
+            .faq-item h2 {
+                font-size: 1.1rem;
+            }
+            
+            .faq-item p {
+                font-size: 0.9rem;
+            }
+            
+            .navigation {
+                gap: 10px;
+                padding: 8px 15px;
+            }
+            
+            .navigation a {
+                padding: 6px 15px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="content">
+
+<h1>Frequently Asked Questions</h1>
+
+<div class="faq-container">
+    <div class="faq-item">
+        <h2>1. Product Details and Condition</h2>
+        <p>Our phones are brand new and factory sealed. They come with original charger, USB cable, earphones, and user manual. All phones include 1-year warranty.</p>
     </div>
-    <div class="navigation">
-        <a href="Home page.html" class="previous">Previous</a>
-        <a href="Help.html" class="next">Next</a>
+
+    <div class="faq-item">
+        <h2>2. Pricing and Payment</h2>
+        <p>Prices vary by model from $299 to $1,199. We accept cash, credit/debit cards, M-Pesa, and bank transfers. Installment payment available for qualified buyers.</p>
     </div>
+
+    <div class="faq-item">
+        <h2>3. Shipping and Delivery</h2>
+        <p>We offer free shipping within Kenya (3-5 business days). International shipping available at $25. Express delivery (1-2 days) available for extra $10.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>4. Returns and Refunds</h2>
+        <p>Returns accepted within 14 days if phone is undamaged and in original packaging. Full refund or exchange offered. Defective products returned within 30 days.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>5. Compatibility and Network</h2>
+        <p>All phones are factory unlocked and work with any carrier (Safaricom, Airtel, Telkom). 5G and 4G LTE compatible on all major networks.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>6. Privacy and Data</h2>
+        <p>All phones are factory reset before shipping. Your data stays yours. We never store customer payment information. Secure checkout guaranteed.</p>
+    </div>
+
+    <div class="contact-box">
+        <h2>7. Contact Us</h2>
+        <p>Have more questions? We're here to help!</p>
+        <p>Email: <a href="mailto:support@phonestore.com">support@phonestore.com</a></p>
+        <p>Phone: <a href="tel:+254715755649">+254 715 755 649</a></p>
+        <p>Hours: Monday - Saturday, 9AM - 6PM</p>
+    </div>
+</div>
+
+<div class="navigation">
+    <a href="Home page.html" class="previous">Previous</a>
+    <a href="Help.html" class="next">Next</a>
+</div>
+
 </body>
 </html>
-
-
