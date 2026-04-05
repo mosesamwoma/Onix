@@ -42,9 +42,4 @@ cd MobileHub
 
 Open `Home Page.html` in your web browser or visit the live site above.
 
-## Built With
-
-- HTML5
-- CSS3
-
 ---
