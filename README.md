@@ -2,7 +2,11 @@
 
 A multi-page website for a fictional phone company, built as a group project
 while learning HTML and CSS fundamentals during our first year,
-first semester at Meru University.
+first semester at Meru University — Bachelor of Science in Data Science.
+
+## Live Site
+
+https://helpful-empanada-60d671.netlify.app/
 
 ## Group Members
 
@@ -36,16 +40,11 @@ cd MobileHub
 
 ## Viewing the Website
 
-Open `Home Page.html` in your web browser to start.
+Open `Home Page.html` in your web browser or visit the live site above.
 
 ## Built With
 
 - HTML5
 - CSS3
-
-## Notes
-
-- Code includes comments for learning purposes
-- This project documents our journey learning web development
 
 ---
