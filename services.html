@@ -3,183 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Store</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding-bottom: 100px;
-        }
-
-        .search-wrapper {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-
-        .search-container {
-            display: flex;
-            gap: 10px;
-            background: white;
-            padding: 5px 15px;
-            border-radius: 50px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-
-        .search-container input {
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 50px;
-            outline: none;
-            width: 200px;
-        }
-
-        .search-container button {
-            padding: 8px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-        }
-
-        .content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 80px 20px 50px 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: white;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            text-align: center;
-            color: rgba(255,255,255,0.9);
-            margin-bottom: 50px;
-        }
-
-        .brand-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        .brand-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-        }
-
-        .brand-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .brand-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 25px;
-            text-align: center;
-        }
-
-        .brand-header h2 {
-            color: white;
-            font-size: 1.8rem;
-        }
-
-        .brand-body {
-            padding: 20px;
-        }
-
-        .model-list {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .model-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .stock {
-            color: #28a745;
-            font-weight: bold;
-            font-size: 0.8rem;
-        }
-
-        .price {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #667eea;
-            margin: 15px 0;
-        }
-
-        .order-btn {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-        }
-
-        .bottom-nav {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            border-radius: 50px;
-            padding: 10px 25px;
-            display: flex;
-            gap: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-
-        .nav-btn {
-            padding: 8px 25px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            color: white;
-        }
-
-        .nav-btn.prev {
-            background: #28a745;
-        }
-
-        .nav-btn.next {
-            background: #667eea;
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 1.8rem; }
-            .brand-grid { grid-template-columns: 1fr; }
-            .search-container input { width: 150px; }
-        }
-    </style>
+    <title>Services - Onix Phone Company</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="services-body">
 
     <div class="search-wrapper">
         <div class="search-container">
@@ -188,7 +15,7 @@
         </div>
     </div>
 
-    <div class="content">
+    <div class="services-content">
         <h1>Premium Phone Store</h1>
         <div class="subtitle">Best smartphones at best prices</div>
 
@@ -202,7 +29,7 @@
                         <li><span>iPhone 14</span><span class="stock">In Stock</span></li>
                     </ul>
                     <div class="price">From $999</div>
-                    <a href="docs/services/iphone.html" class="order-btn" target="_blank">Shop Now</a>
+                    <a href="services/iphone.html" class="order-btn">Shop Now</a>
                 </div>
             </div>
 
@@ -215,7 +42,7 @@
                         <li><span>Galaxy Z Flip5</span><span class="stock">In Stock</span></li>
                     </ul>
                     <div class="price">From $799</div>
-                    <a href="docs/services/samsung.html" class="order-btn" target="_blank">Shop Now</a>
+                    <a href="services/samsung.html" class="order-btn">Shop Now</a>
                 </div>
             </div>
 
@@ -228,7 +55,7 @@
                         <li><span>Redmi K60</span><span class="stock">In Stock</span></li>
                     </ul>
                     <div class="price">From $299</div>
-                    <a href="docs/services/redmi.html" class="order-btn" target="_blank">Shop Now</a>
+                    <a href="services/redmi.html" class="order-btn">Shop Now</a>
                 </div>
             </div>
 
@@ -241,7 +68,7 @@
                         <li><span>Realme Narzo</span><span class="stock">In Stock</span></li>
                     </ul>
                     <div class="price">From $349</div>
-                    <a href="docs/services/realme.html" class="order-btn" target="_blank">Shop Now</a>
+                    <a href="services/realme.html" class="order-btn">Shop Now</a>
                 </div>
             </div>
 
@@ -254,7 +81,7 @@
                         <li><span>Moto Razr 40</span><span class="stock">Limited</span></li>
                     </ul>
                     <div class="price">From $449</div>
-                    <a href="docs/services/motorola.html" class="order-btn" target="_blank">Shop Now</a>
+                    <a href="services/motorola.html" class="order-btn">Shop Now</a>
                 </div>
             </div>
 
@@ -267,15 +94,15 @@
                         <li><span>Pixel 7a</span><span class="stock">In Stock</span></li>
                     </ul>
                     <div class="price">From $599</div>
-                    <a href="docs/services/google pixel.html" class="order-btn" target="_blank">Shop Now</a>
+                    <a href="services/google-pixel.html" class="order-btn">Shop Now</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="bottom-nav">
-        <a href="index.html" class="nav-btn prev">Previous</a>
-        <a href="About Us.html" class="nav-btn next">Next</a>
+    <div class="navigation">
+        <a href="index.html" class="previous">Previous</a>
+        <a href="About Us.html" class="next">Next</a>
     </div>
 
     <script>
@@ -283,16 +110,12 @@
             let input = document.getElementById('searchInput');
             let filter = input.value.toLowerCase();
             let cards = document.getElementsByClassName('brand-card');
-            
             for (let i = 0; i < cards.length; i++) {
                 let name = cards[i].querySelector('h2').innerText.toLowerCase();
-                if (name.includes(filter)) {
-                    cards[i].style.display = "";
-                } else {
-                    cards[i].style.display = "none";
-                }
+                cards[i].style.display = name.includes(filter) ? "" : "none";
             }
         }
     </script>
+
 </body>
 </html>

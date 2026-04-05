@@ -3,207 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - Phone Store</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding-bottom: 100px;
-        }
-
-        h1 {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
-            padding: 25px;
-            font-size: 2.5rem;
-            margin: 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .team-container {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 0 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .team-member {
-            background: white;
-            border-radius: 20px;
-            padding: 25px;
-            text-align: center;
-            width: 250px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .team-member:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        }
-
-        .team-member img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #667eea;
-            margin-bottom: 15px;
-        }
-
-        .team-member h3 {
-            color: #333;
-            font-size: 1.3rem;
-            margin: 10px 0 5px;
-        }
-
-        .team-member .role {
-            color: #667eea;
-            font-weight: bold;
-            font-size: 0.9rem;
-            margin: 5px 0;
-        }
-
-        .team-member .phone {
-            color: #666;
-            font-size: 0.85rem;
-            margin: 5px 0;
-        }
-
-        .team-member .email {
-            color: #764ba2;
-            font-size: 0.8rem;
-            margin: 5px 0;
-            word-break: break-all;
-        }
-
-        /* Navigation Bar */
-        .navigation {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
-            background: white;
-            padding: 10px 25px;
-            border-radius: 50px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-
-        .navigation a {
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            padding: 10px 25px;
-            border-radius: 50px;
-            transition: transform 0.3s;
-        }
-
-        .navigation a.previous {
-            background-color: #28a745;
-        }
-
-        .navigation a.next {
-            background-color: #667eea;
-        }
-
-        .navigation a:hover {
-            transform: scale(1.05);
-            opacity: 0.9;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.8rem;
-                padding: 15px;
-            }
-            
-            .team-member {
-                width: 200px;
-                padding: 15px;
-            }
-            
-            .team-member img {
-                width: 120px;
-                height: 120px;
-            }
-            
-            .navigation {
-                gap: 10px;
-                padding: 8px 15px;
-            }
-            
-            .navigation a {
-                padding: 6px 15px;
-                font-size: 12px;
-            }
-        }
-    </style>
+    <title>About Us - Onix Phone Company</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="about-body">
 
-<h1>Meet Our Team</h1>
+    <h1>Meet Our Team</h1>
 
-<div class="team-container">
-    <div class="team-member">
-        <img src="assets/WINNIE.jpg" alt="Winnie David">
-        <h3>WINNIE DAVID</h3>
-        <div class="role">Chief Executive Officer</div>
-        <div class="phone">(123) 456-7890</div>
-        <div class="email">winniedavid@gmail.com</div>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="assets/WINNIE.jpg" alt="Winnie David">
+            <h3>WINNIE DAVID</h3>
+            <div class="role">Chief Executive Officer</div>
+            <div class="phone">(123) 456-7890</div>
+            <div class="email">winniedavid@gmail.com</div>
+        </div>
+        <div class="team-member">
+            <img src="assets/fred.jpg" alt="Freddy">
+            <h3>FREDDY</h3>
+            <div class="role">Boss</div>
+            <div class="phone">(098) 765-4321</div>
+            <div class="email">freddyotieno@gmail.com</div>
+        </div>
+        <div class="team-member">
+            <img src="assets/day.jpg" alt="Daisy">
+            <h3>DAISY</h3>
+            <div class="role">Manager</div>
+            <div class="phone">(555) 123-4567</div>
+            <div class="email">daisykiplanget@gmail.com</div>
+        </div>
+        <div class="team-member">
+            <img src="assets/joh.jpg" alt="John Kilonzo">
+            <h3>JOHN KILONZO</h3>
+            <div class="role">Director</div>
+            <div class="phone">(444) 321-0987</div>
+            <div class="email">liljonte@gmail.com</div>
+        </div>
+        <div class="team-member">
+            <img src="assets/ayo.jpg" alt="Moses Amwoma">
+            <h3>MOSES AMWOMA</h3>
+            <div class="role">Vice President</div>
+            <div class="phone">(222) 333-4444</div>
+            <div class="email">mosesamwoma@gmail.com</div>
+        </div>
     </div>
 
-    <div class="team-member">
-        <img src="assets/fred.jpg" alt="Freddy">
-        <h3>FREDDY</h3>
-        <div class="role">BOSS</div>
-        <div class="phone">(098) 765-4321</div>
-        <div class="email">freddyotieno@gmail.com</div>
+    <div class="navigation">
+        <a href="services.html" class="previous">Previous</a>
+        <a href="FAQs.html" class="next">Next</a>
     </div>
-
-    <div class="team-member">
-        <img src="assets/day.jpg" alt="Daisy">
-        <h3>DAISY</h3>
-        <div class="role">MANAGER</div>
-        <div class="phone">(555) 123-4567</div>
-        <div class="email">daisykiplanget@gmail.com</div>
-    </div>
-
-    <div class="team-member">
-        <img src="assets/joh.jpg" alt="John Kilonzo">
-        <h3>JOHN KILONZO</h3>
-        <div class="role">DIRECTOR</div>
-        <div class="phone">(444) 321-0987</div>
-        <div class="email">liljonte@gmail.com</div>
-    </div>
-
-    <div class="team-member">
-        <img src="assets/ayo.jpg" alt="Moses Amwoma">
-        <h3>MOSES AMWOMA</h3>
-        <div class="role">VICE PRESIDENT</div>
-        <div class="phone">(222) 333-4444</div>
-        <div class="email">mosesamwoma@gmail.com</div>
-    </div>
-</div>
-
-<div class="navigation">
-    <a href="index.html" class="previous">Previous</a>
-    <a href="FAQs.html" class="next">Next</a>
-</div>
 
 </body>
 </html>
