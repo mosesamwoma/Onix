@@ -3,267 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Center - Phone Store</title>
+    <title>Help Section</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding-bottom: 100px;
-        }
-
-        h1 {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
-            padding: 25px;
-            font-size: 2.5rem;
-            margin: 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .help-container {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .contact-section h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-
-        .contact-details {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .contact-card {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            min-width: 200px;
-        }
-
-        .contact-card p {
-            margin: 10px 0;
-            color: #555;
-        }
-
-        .contact-card a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-card a:hover {
-            text-decoration: underline;
-        }
-
-        /* Feedback Form */
-        .feedback-section {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .feedback-section h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-
-        label {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 14px;
-        }
-
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        .button-group {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        button {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 14px;
-            transition: transform 0.3s;
-        }
-
-        button[type="submit"] {
-            background: linear-gradient(135deg, #28a745, #20c997);
-            color: white;
-        }
-
-        button[type="reset"] {
-            background: #dc3545;
-            color: white;
-        }
-
-        button:hover {
-            transform: scale(1.02);
-            opacity: 0.9;
-        }
-
-        /* Video Section */
-        .video-section {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .video-section h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-
-        video {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        /* Navigation Bar */
-        .navigation {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
-            background: white;
-            padding: 10px 25px;
-            border-radius: 50px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-
-        .navigation a {
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            padding: 10px 25px;
-            border-radius: 50px;
-            transition: transform 0.3s;
-        }
-
-        .navigation a.previous {
-            background-color: #28a745;
-        }
-
-        .navigation a.next {
-            background-color: #667eea;
-        }
-
-        .navigation a:hover {
-            transform: scale(1.05);
-            opacity: 0.9;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.8rem;
-                padding: 15px;
-            }
-            
-            .contact-details {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .button-group {
-                flex-direction: column;
-            }
-            
-            .navigation {
-                gap: 10px;
-                padding: 8px 15px;
-            }
-            
-            .navigation a {
-                padding: 6px 15px;
-                font-size: 12px;
-            }
-        }
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #333; }
+        .faq, .contact, .feedback { margin-bottom: 20px; }
+        label { display: block; margin-top: 10px; }
+        input, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 10px; padding: 10px 15px; background-color: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
     </style>
 </head>
 <body>
 
-<h1>Help Center</h1>
-
-<div class="help-container">
-    <!-- Contact Section -->
-    <div class="contact-section">
+    <h1>Help Center</h1>
+ <div class="contact">
         <h2>Contact Us</h2>
         <p>If you need further assistance, please reach out:</p>
-        <div class="contact-details">
-            <div class="contact-card">
-                <p><strong>Email:</strong></p>
-                <p><a href="mailto:onixcompany@gmail.com">onixcompany@gmail.com</a></p>
-            </div>
-            <div class="contact-card">
-                <p><strong>Phone:</strong></p>
-                <p><a href="tel:+254715755649">+254 715 755 649</a></p>
-            </div>
-            <div class="contact-card">
-                <p><strong>WhatsApp:</strong></p>
-                <p><a href="https://wa.me/254715755649">Chat with us</a></p>
-            </div>
-        </div>
+        <p>Email: <a href="mailto:ONIX COMPANY.com">onixcompany@gmailcom</a></p>
+        <p>Phone: (123) 456-7890</p>
     </div>
 
-    <!-- Feedback Form -->
-    <div class="feedback-section">
+    <div class="feedback">
         <h2>Feedback Form</h2>
-        <form action="#" method="post" onsubmit="return submitFeedback(event)">
+        <form action="/submit-feedback" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -273,39 +36,105 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-            <div class="button-group">
-                <button type="submit">Submit Feedback</button>
-                <button type="reset">Cancel Feedback</button>
-            </div>
+            <button type="submit">Submit Feedback</button>
+            <button type="cancel">cancel feedback</button>
         </form>
     </div>
 
-    <!-- Video Section -->
-    <div class="video-section">
-        <h2>More About Us</h2>
-        <video controls>
-            <source src="VID-20241125-WA0008.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p style="margin-top: 15px; color: #666;">Watch this video to learn more about our company</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+        }
+        .navigation a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .navigation a.previous {
+            background-color: #4CAF50;
+        }
+        .navigation a.next {
+            background-color: #008CBA;
+        }
+        .navigation a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
     </div>
-</div>
+    <div class="navigation">
+        <a href="Home Page.html" class="previous">Previous</a>
+        <a href="Home Page.html" class="next">Next</a>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        video {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
 
-<div class="navigation">
-    <a href="Home Page.html" class="previous">Previous</a>
-    <a href="Home Page.html" class="next">Next</a>
+<div class="video-container">
+    <h1>MORE ABOUT US</h1>
+    <video controls>
+        <source src="C:\Users\DELL\OneDrive\Documents\shit\VID-20241125-WA0008.mp4" type="video/mp4">
+        <source src="path/to/your-video.ogg" type="video/ogg">
+    </video>
 </div>
-
-<script>
-    function submitFeedback(event) {
-        event.preventDefault();
-        alert("Thank you for your feedback! We will get back to you soon.");
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
-        return false;
-    }
-</script>
 
 </body>
 </html>
+
+

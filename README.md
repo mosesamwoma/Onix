@@ -1,6 +1,24 @@
-# My First Website
+# MobileHub — Onix Phone Company Website
 
-My first website project created during my first year, first semester. A collection of web pages built while learning HTML, CSS, and JavaScript fundamentals.
+A multi-page website for a fictional phone company, built as a group project
+while learning HTML and CSS fundamentals during our first year,
+first semester at Meru University.
+
+## Group Members
+
+- Freddy
+- Moses
+- Winnie
+- Johnte
+- Daisy
+
+## Pages
+
+- **Home Page** — Landing page with hero section and feature cards
+- **Services** — Products and services offered
+- **About Us** — Company background
+- **FAQs** — Frequently asked questions
+- **Help** — Customer support
 
 ## Prerequisites
 
@@ -11,22 +29,23 @@ My first website project created during my first year, first semester. A collect
 ## Installation
 
 Clone the repository:
-
 ```bash
-git clone https://github.com/mosesamwoma/my-first-website.git
-cd my-first-website
+git clone https://github.com/mosesamwoma/MobileHub.git
+cd MobileHub
 ```
 
 ## Viewing the Website
 
-Simply open the `index.html` file in your web browser to view the website.
+Open `Home Page.html` in your web browser to start.
+
+## Built With
+
+- HTML5
+- CSS3
 
 ## Notes
 
 - Code includes comments for learning purposes
-- This project documents my journey learning web development
-- Built with HTML, CSS, and JavaScript
+- This project documents our journey learning web development
 
-## License
-
-This is a private learning project.
+---
