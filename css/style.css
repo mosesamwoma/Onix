@@ -52,6 +52,7 @@ body {
     text-align: center;
     padding: 12px;
     font-size: 13px;
+    margin-bottom: 60px;
 }
 
 /* ── SHARED BOTTOM NAVIGATION ── */
@@ -106,7 +107,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 40px 20px 100px 20px;
+    padding: 40px 20px 20px 20px;
     background: #f9f9f9;
 }
 .card {
