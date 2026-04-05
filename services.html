@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Search Button</title>
+    <title>Phone Store | Buy Smartphones</title>
     <style>
-        /* Style the form container */
+        /* ===== YOUR ORIGINAL STYLES KEPT ===== */
+        
+        /* Style the form container - YOUR ORIGINAL */
         .search-container {
             position: fixed;
-            top: 20px; /* Distance from the bottom */
-            right: 20px; /* Distance from the left */
+            top: 20px;
+            right: 20px;
             display: flex;
-            gap: 5px; /* Space between input and button */
+            gap: 5px;
+            z-index: 100;
         }
 
-        /* Style the search input */
         .search-container input[type="text"] {
             padding: 10px;
             font-size: 16px;
@@ -23,42 +25,22 @@
             outline: none;
         }
 
-        /* Style the search button */
         .search-container button {
             padding: 10px 15px;
             font-size: 16px;
             color: #fff;
-            background-color: #007bff; /* Blue background */
+            background-color: #007bff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
 
-        /* Change button color on hover */
         .search-container button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #0056b3;
         }
-    </style>
-</head>
-<body>
 
-    <!-- Search Form -->
-    <form action="search_results.html" method="GET" class="search-container">
-        <input type="text" name="query" placeholder="Search..." required>
-        <button type="submit">Search</button>
-    </form>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Store</title>
-    <style>
-        /* Basic styling for the table */
+        /* YOUR ORIGINAL TABLE STYLES */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -76,65 +58,11 @@
             background-color: #f9f9f9;
         }
         h2 {
-          text-align: center;
-          color: blueviolet;
+            text-align: center;
+            color: blueviolet;
         }
-    </style>
-</head>
-<body>
 
-    <h2>Available Phones in Store</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Brand</th>
-                <th>Model</th>
-                <th>stock</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                
-                <td><a href="iphone.html">iphone</a></td>
-                <td>iPhone 14</td>
-                <td>In Stock</td>
-            </tr>
-            <tr>
-                <td><a href="Samsung.html">samsung</a></td>
-                <td>Galaxy S23</td>
-                <td>Out of Stock</td>s
-            </tr>
-            <tr>
-                <td><a href="redmi.html">redmi</a></td>
-                <td>Pixel 8</td>
-                <td>In Stock</td>
-            </tr>
-            <tr>
-                
-                <td><a href="realme.html">realme</a></td>
-                <td>redmi 13c</td>
-                <td>In Stock</td>
-            </tr>
-            <tr>
-                <td><a href="Motorola.html">motorola</a></td>
-                <td>note50</td>
-                <td>In Stock</td>
-            </tr>
-            <tr>
-                <td><a href="google pixel.html">google pixel</a></td>
-                <td>google pixel</td>
-                <td>In Stock</td>
-            </tr>
-        </tbody>
-    </table>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
+        /* YOUR ORIGINAL NAVIGATION STYLES */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -173,15 +101,114 @@
         .navigation a:hover {
             opacity: 0.8;
         }
+
+        /* SMALL FIXES */
+        .search-container {
+            z-index: 1000;
+        }
+        .content {
+            margin-bottom: 80px;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Order button style */
+        .buy-link {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .buy-link:hover {
+            background-color: #218838;
+            text-decoration: none;
+        }
+        
+        /* Phone link style */
+        .phone-link {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .phone-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+
+    <!-- SEARCH FORM -->
+    <form action="#" method="GET" class="search-container">
+        <input type="text" name="query" placeholder="Search phones..." required>
+        <button type="submit">Search</button>
+    </form>
+
     <div class="content">
+        <h2>🔥 Available Phones in Store</h2>
+
+        <table id="phoneTable">
+            <thead>
+                <tr>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Stock</th>
+                    <th>Buy Now</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="services/iphone.html" class="phone-link">iPhone</a></a></td>
+                    <td>iPhone 14 Pro Max</a></td>
+                    <td>✅ In Stock</a></td>
+                    <td><a href="services/iphone.html" class="buy-link" target="_blank">🛒 Buy Now</a></a></td>
+                </tr>
+                <tr>
+                    <td><a href="services/Samsung.html" class="phone-link">Samsung</a></a></td>
+                    <td>Galaxy S23 Ultra</a></td>
+                    <td>✅ In Stock</a></td>
+                    <td><a href="services/Samsung.html" class="buy-link" target="_blank">🛒 Buy Now</a></a></td>
+                </tr>
+                <tr>
+                    <td><a href="services/Redmi.html" class="phone-link">Redmi</a></a></td>
+                    <td>Redmi Note 13 Pro</a></td>
+                    <td>✅ In Stock</a></td>
+                    <td><a href="services/Redmi.html" class="buy-link" target="_blank">🛒 Buy Now</a></a></td>
+                </tr>
+                <tr>
+                    <td><a href="services/Realme.html" class="phone-link">Realme</a></a></td>
+                    <td>Realme GT 3</a></td>
+                    <td>✅ In Stock</a></td>
+                    <td><a href="services/Realme.html" class="buy-link" target="_blank">🛒 Buy Now</a></a></td>
+                </tr>
+                <tr>
+                    <td><a href="services/Motorola.html" class="phone-link">Motorola</a></a></td>
+                    <td>Moto Edge 50</a></td>
+                    <td>✅ In Stock</a></td>
+                    <td><a href="services/Motorola.html" class="buy-link" target="_blank">🛒 Buy Now</a></a></td>
+                </tr>
+                <tr>
+                    <td><a href="services/google pixel.html" class="phone-link">Google Pixel</a></a></td>
+                    <td>Pixel 8 Pro</a></td>
+                    <td>✅ In Stock</a></td>
+                    <td><a href="services/google pixel.html" class="buy-link" target="_blank">🛒 Buy Now</a></a></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+
+    <!-- YOUR ORIGINAL NAVIGATION - UNCHANGED -->
     <div class="navigation">
         <a href="Home page.html" class="previous">Previous</a>
         <a href="About Us.html" class="next">Next</a>
     </div>
+
+    <!-- NO JAVASCRIPT - PURE HTML -->
+
 </body>
 </html>
-
