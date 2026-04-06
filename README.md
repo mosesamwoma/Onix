@@ -1,4 +1,4 @@
-# MobileHub — Onix Phone Company Website
+# Onic — Phone Company Website
 
 A multi-page website for a fictional phone company, built as a group project
 while learning HTML and CSS fundamentals during our first year,
@@ -47,7 +47,6 @@ Open `Home Page.html` in your web browser or visit the live site above.
 
 * Practice structuring multi-page websites
 * Apply CSS styling techniques
-* Work collaboratively using version control
 * Build a user-friendly interface
 
 ---
