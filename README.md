@@ -1,4 +1,4 @@
-# Onic — Phone Company Website
+# Onix — Phone Company Website
 
 A multi-page website for a fictional phone company, built as a group project
 while learning HTML and CSS fundamentals during our first year,
