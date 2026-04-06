@@ -1,61 +1,36 @@
 # Onix — Phone Company Website
 
-A multi-page website for a fictional phone company, built as a group project
-while learning HTML and CSS fundamentals during our first year,
-first semester at Meru University — Bachelor of Science in Data Science.
+A multi-page website for a fictional phone company built with HTML and CSS as a first-year group project at Meru University (BSc Data Science).
 
-## Live Site
+**Live Site:** https://helpful-empanada-60d671.netlify.app/
 
-https://helpful-empanada-60d671.netlify.app/
+## Team
 
-## Group Members
+Freddy • Moses • Winnie • Johnte • Daisy
 
-- Freddy
-- Moses
-- Winnie
-- Johnte
-- Daisy
+## Features
 
-## Pages
+- Home page with hero section
+- Services, About, FAQs, and Help pages
+- Clean CSS styling and responsive layout
+- Custom color scheme and typography
 
-- **Home Page** — Landing page with hero section and feature cards
-- **Services** — Products and services offered
-- **About Us** — Company background
-- **FAQs** — Frequently asked questions
-- **Help** — Customer support
-
-## Prerequisites
-
-- A web browser (Chrome, Firefox, Safari, etc.)
-- Git
-- A text editor or IDE (VS Code, Sublime Text, etc.)
-
-## Installation
-
-Clone the repository:
+## Quick Start
 ```bash
-git clone https://github.com/mosesamwoma/MobileHub.git
-cd MobileHub
+git clone https://github.com/mosesamwoma/Onix.git
+cd Onix
 ```
 
-## Viewing the Website
+Open `Home Page.html` in your browser.
 
-Open `Home Page.html` in your web browser or visit the live site above.
+## Project Goals
 
----
-##  Project Goals
+- Practice structuring multi-page websites
+- Apply CSS styling techniques
+- Build a user-friendly interface
 
-* Practice structuring multi-page websites
-* Apply CSS styling techniques
-* Build a user-friendly interface
+## Future Plans
 
----
-
-##  Future Improvements
-
-* Make the site fully responsive for mobile devices
-* Add JavaScript for interactivity
-* Improve UI/UX design and animations
-* Optimize performance and accessibility
-
----
+- Mobile responsiveness
+- JavaScript interactivity
+- Enhanced UI/UX and animations
