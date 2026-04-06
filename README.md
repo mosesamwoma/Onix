@@ -43,3 +43,20 @@ cd MobileHub
 Open `Home Page.html` in your web browser or visit the live site above.
 
 ---
+##  Project Goals
+
+* Practice structuring multi-page websites
+* Apply CSS styling techniques
+* Work collaboratively using version control
+* Build a user-friendly interface
+
+---
+
+##  Future Improvements
+
+* Make the site fully responsive for mobile devices
+* Add JavaScript for interactivity
+* Improve UI/UX design and animations
+* Optimize performance and accessibility
+
+---
