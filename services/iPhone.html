@@ -3,92 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordered List of iPhones</title>
+    <title>iPhone - MobileHub</title>
+    <link rel="stylesheet" href="../css/services.css">
 </head>
 <body>
+
     <h1>IN STOCK</h1>
-    <ol>
-        <li>iPhone 13 Pro Max</li>
-        <li>iPhone 13 Pro</li>
-        <li>iPhone 13</li>
-        <li>iPhone 13 Mini</li>
-        <li>iPhone 12 Pro Max</li>
-        <li>iPhone 12 Pro</li>
-        <li>iPhone 12</li>
-        <li>iPhone 12 Mini</li>
-    </ol>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unordered List of iPhones</title>
-</head>
-<body>
-    <h1>OUT OF STOCK</h1>
-    <ul>
-        <li>iPhone 13 Pro Max</li>
-        <li>iPhone 13 Pro</li>
-        <li>iPhone 13</li>
-        <li>iPhone 13 Mini</li>
-        <li>iPhone 12 Pro Max</li>
-        <li>iPhone 12 Pro</li>
-        <li>iPhone 12</li>
-        <li>iPhone 12 Mini</li>
-    </ul>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
-        .navigation {
-            display: flex;
-            justify-content: space-between;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            padding: 10px 20px;
-            background-color: #f1f1f1;
-        }
-        .navigation a {
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        .navigation a.previous {
-            background-color: #4CAF50;
-        }
-        .navigation a.next {
-            background-color: #008CBA;
-        }
-        .navigation a:hover {
-            opacity: 0.8;
-        }
-    </style>
-</head>
-<body>
-    <div class="content">
+    <div class="product-container">
+        <div class="product">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg" alt="iPhone 13 Pro Max">
+            <h2>iPhone 13 Pro Max</h2>
+            <p>128GB Storage</p>
+            <div class="price">ksh.150,000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+        
+        <div class="product">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg" alt="iPhone 13 Pro">
+            <h2>iPhone 13 Pro</h2>
+            <p>256GB Storage</p>
+            <div class="price">ksh 130,000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg" alt="iPhone 13">
+            <h2>iPhone 13</h2>
+            <p>128GB Storage</p>
+            <div class="price">ksh.110,000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max.jpg" alt="iPhone 12 Pro Max">
+            <h2>iPhone 12 Pro Max</h2>
+            <p>128GB Storage</p>
+            <div class="price">ksh.100,000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro.jpg" alt="iPhone 12 Pro">
+            <h2>iPhone 12 Pro</h2>
+            <p>128GB Storage</p>
+            <div class="price">ksh.90,000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg" alt="iPhone 12">
+            <h2>iPhone 12</h2>
+            <p>64GB Storage</p>
+            <div class="price">ksh.80,000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
     </div>
+
+    <h1>OUT OF STOCK</h1>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-mini.jpg" alt="iPhone 12 Mini">
+            <h2>iPhone 12 Mini</h2>
+            <p>64GB Storage</p>
+            <div class="price">ksh.70,000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11-pro-max.jpg" alt="iPhone 11 Pro Max">
+            <h2>iPhone 11 Pro Max</h2>
+            <p>128GB Storage</p>
+            <div class="price">ksh.65,000</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
     <div class="navigation">
         <a href="../services.html" class="previous">Previous</a>
     </div>
+
+    <form action="search_results.html" method="GET" class="search-container">
+        <input type="text" name="query" placeholder="Search..." required>
+        <button type="submit">Search</button>
+    </form>
+
 </body>
 </html>
